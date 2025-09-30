@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Titlescenescript : MonoBehaviour
 {
-    public string what_scene;
+    public int what_scene;
     // Start is called before the first frame update
     public void skift()
     {
