@@ -13,10 +13,9 @@ public class Titlescenescript : MonoBehaviour
         SceneManager.LoadScene(what_scene);
 
     }
-    // Update is called once per frame
-    void Update()
+    public void Restart()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
+
 }
