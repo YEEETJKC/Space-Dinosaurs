@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d4fbd40b401d34d86e5e8d33efbdc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  what_scene: 0
+  what_scene: 3
 --- !u!114 &2073306632
 MonoBehaviour:
   m_ObjectHideFlags: 0
