@@ -14,7 +14,6 @@ public class DamageTiles : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             manager.Death();
-            Debug.Log("Died");
         }
     }
 }
