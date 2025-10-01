@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TutorialRequirement
   - Danger
+  - Food
   layers:
   - Default
   - TransparentFX
