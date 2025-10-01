@@ -17,6 +17,7 @@ public class Food_script : MonoBehaviour
         if(collision.tag == "Player")
         {
             foodCounter.counter += 1;
+            Destroy(gameObject);
         }
     }
 }
