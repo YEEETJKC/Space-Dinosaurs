@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Gamemanager : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    [Header("UI")]
     [SerializeField] GameObject deathScreen;
+    [SerializeField] GameObject canvas;
+    [SerializeField] GameObject menu;
+
+    [SerializeField] GameObject player;
     private Vector2 respawnPoint;
 
     // Start is called before the first frame update
@@ -22,6 +26,8 @@ public class Gamemanager : MonoBehaviour
     public void Death()
     {
         player.SetActive(false);
+        canvas.SetActive(true);
+        menu.SetActive(false);
         deathScreen.SetActive(true);
     }
     public void Respawn()
