@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -17,6 +18,14 @@ public class take_dmg_from_inviorment : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Danger")
+        {
+            death_screen.SetActive(true);
+            Destroy(gameObject);
+        }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
         {
             death_screen.SetActive(true);
             Destroy(gameObject);
